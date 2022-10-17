@@ -76,8 +76,8 @@ class CategorieProduitServiceImplTest {
 //        System.out.println("Update works !");
 //    }
 
-//     @Test
-//     void retrieveCategorieProduit() {
+       @Test
+       void retrieveCategorieProduit() {
 //         CategorieProduit cp = new CategorieProduit(6L, "123456", "fraise", null);
 
 //         cp.setIdCategorieProduit(6L);
@@ -88,5 +88,5 @@ class CategorieProduitServiceImplTest {
 
 //         System.out.println(cp);
 //         System.out.println(" Retrieve is working correctly...!!");
-//     }
+     }
 }
