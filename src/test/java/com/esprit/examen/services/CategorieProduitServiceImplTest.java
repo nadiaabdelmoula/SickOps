@@ -76,17 +76,17 @@ class CategorieProduitServiceImplTest {
 //        System.out.println("Update works !");
 //    }
 
-    @Test
-    void retrieveCategorieProduit() {
-        CategorieProduit cp = new CategorieProduit(6L, "123456", "fraise", null);
+//     @Test
+//     void retrieveCategorieProduit() {
+//         CategorieProduit cp = new CategorieProduit(6L, "123456", "fraise", null);
 
-        cp.setIdCategorieProduit(6L);
+//         cp.setIdCategorieProduit(6L);
 
-        Mockito.when(cpr.findById(Mockito.anyLong())).thenReturn(Optional.of(cp));
-        CategorieProduit cp1 = cps.retrieveCategorieProduit(6L);
-        assertNotNull(cp1);
+//         Mockito.when(cpr.findById(Mockito.anyLong())).thenReturn(Optional.of(cp));
+//         CategorieProduit cp1 = cps.retrieveCategorieProduit(6L);
+//         assertNotNull(cp1);
 
-        System.out.println(cp);
-        System.out.println(" Retrieve is working correctly...!!");
-    }
+//         System.out.println(cp);
+//         System.out.println(" Retrieve is working correctly...!!");
+//     }
 }
