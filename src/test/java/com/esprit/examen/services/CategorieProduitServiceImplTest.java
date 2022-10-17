@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.when;
+
 
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
@@ -85,9 +85,9 @@ class CategorieProduitServiceImplTest {
 
         cp.setIdCategorieProduit(6L);
 
-        Mockito.when(cpr.findById(6L)).thenReturn(Optional.of(cp));
-        cps.retrieveCategorieProduit(6L);
-        Assertions.assertNotNull(cp);
+        Mockito.when(cpr.findById(Mockito.anyLong())).thenReturn(Optional.of(cp));
+        CategorieProduit cp1 = cps.retrieveCategorieProduit(6L);
+        assertNotNull(cp1);
 
         System.out.println(cp);
         System.out.println(" Retrieve is working correctly...!!");
